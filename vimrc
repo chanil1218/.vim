@@ -56,10 +56,10 @@ Bundle 'matchit.zip'
 Bundle 'Command-T'
 
 "color setting
-Bundle 'Railscasts-Theme-GUIand256color'
+Bundle 'jellybeans.vim'
 set term=xterm-256color
 try
-  colorscheme railscasts
+  colorscheme jellybeans
 catch /^Vim\%((\a\+)\)\=:E185/
   "nothing
 endtry
