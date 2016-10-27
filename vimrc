@@ -109,3 +109,6 @@ hi PmenuSbar ctermbg=blue
 "CommandT settings
 let g:CommandTMatchWindowAtTop=1
 let g:CommandTMaxHeight=15
+if &term =~ "xterm" || &term =~ "screen"
+  let g:CommandTCancelMap = ['<ESC>', '<C-c>']
+endif
