@@ -39,6 +39,8 @@ Bundle 'gmarik/vundle'
 " Bundle 'tpope/vim-rails.git' (for example)
 Bundle 'scrooloose/snipmate-snippets.git'
 Bundle 'tpope/vim-rails.git'
+Bundle 'tpope/vim-sleuth.git' 
+" >>> Detect & Set file's indentation style automatically
 
 " vim-scripts repos
 " Bundle 'L9'(for example)
