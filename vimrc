@@ -1,10 +1,10 @@
-"For Vundle filetype is initiate
+" For Vundle filetype is initiate
 filetype on
 filetype off
-"end Vundle initiation at macOSX
+" end Vundle initiation at macOSX
 
-"Use Vim settings, rather then Vi settings (much better!).
-"This must be first, because it changes other options as a side effect.
+" Use Vim settings, rather then Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
 
 set nocompatible
 
@@ -15,16 +15,16 @@ set ruler       "add line, column number
 set encoding=utf-8
 set linespace=4 "add some line space for easy reading
 
-"indent settings
+" indent settings
 set shiftwidth=2
 set softtabstop=2
 set expandtab
 set autoindent
 
-"turn on syntax highlighting
+" turn on syntax highlighting
 syntax on
 
-"Vundle setting start
+" Vundle setting start
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -57,36 +57,36 @@ Bundle 'ruby-matchit'
 Bundle 'matchit.zip'
 Bundle 'Command-T'
 
-"color setting
+" color setting
 Bundle 'jellybeans.vim'
 set term=xterm-256color
 try
   colorscheme jellybeans
 catch /^Vim\%((\a\+)\)\=:E185/
-  "nothing
+  " nothing
 endtry
 " non github repos
 " Bundle 'git://git.wincent.com/command-t.git'(for example)
 
 filetype plugin indent on
 
-"Vundle setting end
+" Vundle setting end
 
-"Global leader key setting to spacebar(default: '\')
+" Global leader key setting to spacebar(default: '\')
 let mapleader = " "
-"Local setting for NERDTree(Navigator) 
+" Local setting for NERDTree(Navigator) 
 silent! nmap <silent> <leader>n :NERDTreeToggle<CR>
-"Local strring for NERDCommenter
+" Local strring for NERDCommenter
 vmap <leader>c <plug>NERDCommenterAlignLeft
 vmap <leader>x <plug>NERDCommenterUncomment
 let NERDRemoveExtraSpaces=0
 
-"snipmate-snippets setting
-"   at the ~/.vim/bundle/snipmate-snippets/
-"   rake deploy_local
+" snipmate-snippets setting
+"    at the ~/.vim/bundle/snipmate-snippets/
+"    rake deploy_local
 
-"Setting for AutoComplPop
-"Only restriction is snipMate shortcut is used only Capital letter
+" Setting for AutoComplPop
+" Only restriction is snipMate shortcut is used only Capital letter
 let g:acp_mappingDriven = 0
 function! InsertTabWrapper()
 let col = col('.') – 1
@@ -108,7 +108,7 @@ hi PmenuSel ctermbg=yellow ctermfg=black
 hi PmenuSbar ctermbg=blue
 "End AutoComplPop"
 
-"CommandT settings
+" CommandT settings
 let g:CommandTMatchWindowAtTop=1
 let g:CommandTMaxHeight=15
 if &term =~ "xterm" || &term =~ "screen"
